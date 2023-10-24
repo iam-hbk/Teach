@@ -1,4 +1,3 @@
-import NavWheel from "@/components/Navwheel";
 import NavigationWheel from "@/components/wheel";
 import data from "@/utils/data";
 import Image from "next/image";
