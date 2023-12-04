@@ -2,8 +2,9 @@ import styled from "@emotion/styled";
 
 // Create styled components for container and SVG element
 const Wheel = styled.div`
-  width: 500px;
-  height: 500px;
+  border-radius: 100%;
+  width: 720px;
+  height: 720px;
   max-width: 100%;
   max-height: 100%;
   cursor: pointer;
@@ -43,7 +44,6 @@ const SegmentPath = styled.path`
 // Create a new styled component for the segment text
 const SegmentText = styled.text`
   transition: fill 0.3s;
-
   &:hover {
     cursor: pointer;
     fill: white;

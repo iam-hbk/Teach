@@ -27,7 +27,7 @@ const data = [
     ],
   },
   {
-    title: "Commitment & Caring",
+    title: "Commitment",
     color: "#6C4388",
     link: "/commitment-caring",
     subSegments: [
@@ -161,7 +161,7 @@ const data = [
     ],
   },
 ];
-export type WheelData = typeof data;
-export type WheelSegment = typeof data[0];
-export type WheelSubSegment = typeof data[0]["subSegments"][0];
+export type TWheelData = typeof data;
+export type TWheelSegment = typeof data[0];
+export type TWheelSubSegment = typeof data[0]["subSegments"][0];
 export default data;

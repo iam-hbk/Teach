@@ -2,7 +2,8 @@
 
 import React, { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import segments, { WheelSegment, WheelSubSegment } from "@/utils/data";
+import segments, { TWheelSegment, TWheelSubSegment } from "@/utils/data";
+import logo from "@/assets/teach_logo.svg";
 import { useCallback } from "react";
 import {
   Wheel,
@@ -18,6 +19,7 @@ import {
   splitTextIntoLines,
   polarToCartesian,
 } from "./wheel_utils";
+import Image from "next/image";
 
 const NavigationWheel = () => {
   // Create a router instance
@@ -42,7 +44,7 @@ const NavigationWheel = () => {
     [],
   );
   // Calculate the total text length for each segment
-  const getTotalTextLength = useCallback((segment: WheelSegment) => {
+  const getTotalTextLength = useCallback((segment: TWheelSegment) => {
     return segment.subSegments.reduce(
       (totalLength, subSegment) => totalLength + subSegment.title.length,
       0,
@@ -51,7 +53,7 @@ const NavigationWheel = () => {
 
   // Calculate the subsegment angle for each subsegment proportionally to their text length
   const getSubSegmentAngle = useCallback(
-    (segment: WheelSegment, subSegment: WheelSubSegment) => {
+    (segment: TWheelSegment, subSegment: TWheelSubSegment) => {
       const totalTextLength = getTotalTextLength(segment);
       return (subSegment.title.length / totalTextLength) * segmentAngle;
     },
@@ -107,18 +109,101 @@ const NavigationWheel = () => {
   // Render the navigation wheel component
   return (
     <Wheel>
-      <SVG viewBox="0 0 600 600">
+      <SVG viewBox="-70 10 720 620">
         {/* Draw the central circle with "TEACH" text */}
         <circle cx="300" cy="300" r="100" fill="white" />
-        <text x="300" y="250" textAnchor="middle" dy=".3em" fontSize="24">
-          {/* <Image
-            src={'/images/teach_logo.svg'}
-            alt="Teach Logo"
-            width={100}
-            height={100}
-          /> */}
-          TEACH
+
+        <text
+          x={230}
+          y="270"
+          fill="#0783DB"
+          textAnchor="middle"
+          font-size="34"
+          font-weight="bold"
+        >
+          T
         </text>
+        <text
+          x={245}
+          y="270"
+          fill="black"
+          textAnchor="middle"
+          font-size="34"
+          font-weight="bold"
+        >
+          .
+        </text>
+        <text
+          x={262}
+          y="270"
+          fill="#4EAA55"
+          textAnchor="middle"
+          font-size="34"
+          font-weight="bold"
+        >
+          E
+        </text>
+        <text
+          x={277}
+          y="270"
+          fill="black"
+          textAnchor="middle"
+          font-size="34"
+          font-weight="bold"
+        >
+          .
+        </text>
+        <text
+          x={297}
+          y="270"
+          fill="#D0411F"
+          textAnchor="middle"
+          font-size="34"
+          font-weight="bold"
+        >
+          A
+        </text>
+        <text
+          x={316}
+          y="270"
+          fill="balck"
+          textAnchor="middle"
+          font-size="34"
+          font-weight="bold"
+        >
+          .
+        </text>
+        <text
+          x={333}
+          y="270"
+          fill="#6C4388"
+          textAnchor="middle"
+          font-size="34"
+          font-weight="bold"
+        >
+          C
+        </text>
+        <text
+          x={350}
+          y="270"
+          fill="balck"
+          textAnchor="middle"
+          font-size="34"
+          font-weight="bold"
+        >
+          .
+        </text>
+        <text
+          x={370}
+          y="270"
+          fill="#525457"
+          textAnchor="middle"
+          font-size="34"
+          font-weight="bold"
+        >
+          H
+        </text>
+
         <text x="300" y="290" textAnchor="middle" dy=".2em" fontSize="20">
           Academic
         </text>
@@ -137,7 +222,10 @@ const NavigationWheel = () => {
           //rotation center for text
           const { x: rotationCenterX, y: rotationCenterY } =
             calculateRotationCenter(startAngle, endAngle);
-          const shouldRotate = startAngle >= 144 && endAngle <= 216;
+
+          const midAngle = (startAngle + endAngle) / 2;
+          const shouldRotate = midAngle > 90 && midAngle < 270;
+          // const textRotation = calculateTextRotation(startAngle, endAngle);
           //   console.log("[SEGMENT]:", segment.title, startAngle, endAngle);
           return (
             <g key={index}>
@@ -170,11 +258,7 @@ const NavigationWheel = () => {
                   href={`#textPath-${index}`}
                   startOffset="50%"
                   textAnchor="middle"
-                  transform={
-                    // shouldRotate
-                    `rotate(180, ${rotationCenterX}, ${rotationCenterY})`
-                    //   : ""
-                  }
+                  transform="scale(-1, 1)"
                   onMouseEnter={() =>
                     console.log("[sssss]", startAngle, shouldRotate, endAngle)
                   }
