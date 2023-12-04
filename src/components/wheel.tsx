@@ -59,7 +59,7 @@ const NavigationWheel = () => {
   );
 
   // Function to handle click event and navigate to the given URL
-  const handleClick = (url: string) => router.replace(url);
+  const handleClick = (url: string) => router.push(url);
 
   // Create a state variable to store the hovered subsegment
   const [hoveredSubSegment, setHoveredSubSegment] = useState<any>(undefined);
@@ -90,13 +90,20 @@ const NavigationWheel = () => {
   const [hoveredSegment, setHoveredSegment] = useState(null);
 
   // Define mouse enter and leave event handlers for segments
-  const handleMainSegmentMouseEnter = useCallback((segmentIndex:any) => {
+  const handleMainSegmentMouseEnter = useCallback((segmentIndex: any) => {
     setHoveredSegment(segmentIndex);
   }, []);
 
   const handleMainSegmentMouseLeave = useCallback(() => {
     setHoveredSegment(null);
   }, []);
+
+  // Function to calculate the rotation center for text
+  const calculateRotationCenter = (startAngle: number, endAngle: number) => {
+    const midAngle = (startAngle + endAngle) / 2;
+    return polarToCartesian(segmentTextRadius, midAngle);
+  };
+
   // Render the navigation wheel component
   return (
     <Wheel>
@@ -125,9 +132,13 @@ const NavigationWheel = () => {
         {segments.map((segment, index) => {
           const startAngle = index * segmentAngle;
           const endAngle = (index + 1) * segmentAngle;
-
           const isHovered = hoveredSegment === index;
 
+          //rotation center for text
+          const { x: rotationCenterX, y: rotationCenterY } =
+            calculateRotationCenter(startAngle, endAngle);
+          const shouldRotate = startAngle >= 144 && endAngle <= 216;
+          //   console.log("[SEGMENT]:", segment.title, startAngle, endAngle);
           return (
             <g key={index}>
               {/* Draw each segment with its color and title */}
@@ -159,6 +170,14 @@ const NavigationWheel = () => {
                   href={`#textPath-${index}`}
                   startOffset="50%"
                   textAnchor="middle"
+                  transform={
+                    // shouldRotate
+                    `rotate(180, ${rotationCenterX}, ${rotationCenterY})`
+                    //   : ""
+                  }
+                  onMouseEnter={() =>
+                    console.log("[sssss]", startAngle, shouldRotate, endAngle)
+                  }
                   onClick={() => handleClick(segment.link)}
                 >
                   {segment.title}
