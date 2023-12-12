@@ -94,11 +94,55 @@ const NavigationWheel = () => {
   // Define mouse enter and leave event handlers for segments
   const handleMainSegmentMouseEnter = useCallback((segmentIndex: any) => {
     setHoveredSegment(segmentIndex);
+    // (document.getElementById("search-modal") as HTMLDialogElement).showModal();
   }, []);
 
   const handleMainSegmentMouseLeave = useCallback(() => {
     setHoveredSegment(null);
+    // (document.getElementById("search-modal") as HTMLDialogElement).close();
   }, []);
+
+  const showTooltip = (
+    subsegment: TWheelSubSegment,
+    event:
+      | React.MouseEvent<SVGPathElement, MouseEvent>
+      | React.MouseEvent<SVGTextElement, MouseEvent>,
+  ) => {
+    const toolTip = document.createElement("div");
+    toolTip.classList.add("tooltip");
+
+    // Create the tooltip content
+    const tooltipContent = document.createElement("span");
+    tooltipContent.style.color = "white";
+    tooltipContent.style.padding = "5px";
+    tooltipContent.style.fontSize = "14px";
+    tooltipContent.innerHTML = subsegment.title;
+    toolTip.appendChild(tooltipContent);
+
+    // Position the tooltip near the mouse position
+    toolTip.style.backgroundColor = subsegment.color;
+    toolTip.style.position = "absolute";
+    toolTip.style.left = `${event.clientX + 10}px`; // Offset to avoid cursor overlap
+    toolTip.style.top = `${event.clientY + 10}px`;
+    toolTip.style.zIndex = "1000";
+    toolTip.style.width = "130px";
+    toolTip.style.textAlign = "center";
+    toolTip.style.minHeight = "50px";
+    toolTip.style.height = "fit-content";
+    toolTip.style.borderRadius = "5px";
+    toolTip.style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.3)";
+    toolTip.style.display = "flex";
+    toolTip.style.alignItems = "center";
+    toolTip.style.justifyContent = "center";
+
+    // Append tooltip to the body
+    document.body.appendChild(toolTip);
+  };
+  // Function to remove tooltip
+  const removeTooltip = () => {
+    const toolTip = document.querySelectorAll<HTMLDivElement>(".tooltip");
+    toolTip.forEach((tooltip) => tooltip.remove());
+  };
 
   // Function to calculate the rotation center for text
   const calculateRotationCenter = (startAngle: number, endAngle: number) => {
@@ -119,7 +163,7 @@ const NavigationWheel = () => {
           fill="#0783DB"
           textAnchor="middle"
           font-size="34"
-          font-weight="bold"
+          // font-weight="bold"
         >
           T
         </text>
@@ -129,7 +173,7 @@ const NavigationWheel = () => {
           fill="black"
           textAnchor="middle"
           font-size="34"
-          font-weight="bold"
+          // font-weight="bold"
         >
           .
         </text>
@@ -139,7 +183,7 @@ const NavigationWheel = () => {
           fill="#4EAA55"
           textAnchor="middle"
           font-size="34"
-          font-weight="bold"
+          // font-weight="bold"
         >
           E
         </text>
@@ -149,7 +193,7 @@ const NavigationWheel = () => {
           fill="black"
           textAnchor="middle"
           font-size="34"
-          font-weight="bold"
+          // font-weight="bold"
         >
           .
         </text>
@@ -159,7 +203,7 @@ const NavigationWheel = () => {
           fill="#D0411F"
           textAnchor="middle"
           font-size="34"
-          font-weight="bold"
+          // font-weight="bold"
         >
           A
         </text>
@@ -169,7 +213,7 @@ const NavigationWheel = () => {
           fill="balck"
           textAnchor="middle"
           font-size="34"
-          font-weight="bold"
+          // font-weight="bold"
         >
           .
         </text>
@@ -179,7 +223,7 @@ const NavigationWheel = () => {
           fill="#6C4388"
           textAnchor="middle"
           font-size="34"
-          font-weight="bold"
+          // font-weight="bold"
         >
           C
         </text>
@@ -189,7 +233,7 @@ const NavigationWheel = () => {
           fill="balck"
           textAnchor="middle"
           font-size="34"
-          font-weight="bold"
+          // font-weight="bold"
         >
           .
         </text>
@@ -199,7 +243,7 @@ const NavigationWheel = () => {
           fill="#525457"
           textAnchor="middle"
           font-size="34"
-          font-weight="bold"
+          // font-weight="bold"
         >
           H
         </text>
@@ -239,8 +283,8 @@ const NavigationWheel = () => {
                 )}
                 fill={isHovered ? segment.color : "white"}
                 onClick={() => handleClick(segment.link)}
-                onMouseEnter={() => handleMainSegmentMouseEnter(index)}
-                onMouseLeave={handleMainSegmentMouseLeave}
+                // onMouseEnter={() => handleMainSegmentMouseEnter(index)}
+                // onMouseLeave={handleMainSegmentMouseLeave}
                 className={isHovered ? "hovered" : ""}
               />
               <path
@@ -309,8 +353,14 @@ const NavigationWheel = () => {
                       )}
                       fill={subSegment.color}
                       onClick={() => handleClick(subSegment.link)}
-                      onMouseEnter={() => handleMouseEnter(index, subIndex)}
-                      onMouseLeave={handleMouseLeave}
+                      onMouseEnter={(e) => {
+                        handleMouseEnter(index, subIndex);
+                        showTooltip(subSegment, e);
+                      }}
+                      onMouseLeave={() => {
+                        handleMouseLeave();
+                        removeTooltip();
+                      }}
                     />
                     <text
                       x={textPosition.x}
@@ -321,8 +371,14 @@ const NavigationWheel = () => {
                       fill="white"
                       transform={`rotate(${rotation}, ${textPosition.x}, ${textPosition.y})`}
                       onClick={() => handleClick(subSegment.link)}
-                      onMouseEnter={() => handleMouseEnter(index, subIndex)}
-                      onMouseLeave={handleMouseLeave}
+                      onMouseEnter={(e) => {
+                        handleMouseEnter(index, subIndex);
+                        showTooltip(subSegment, e);
+                      }}
+                      onMouseLeave={() => {
+                        handleMouseLeave();
+                        removeTooltip();
+                      }}
                     >
                       {/* {subSegment.title} */}
                       {lines.map((line, lineIndex) => (

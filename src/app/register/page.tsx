@@ -64,7 +64,7 @@ const Register = () => {
       position: "top-right",
     });
   return (
-    <section className="glass flex h-screen w-full flex-col items-center justify-center space-y-5 bg-primary p-10 transition-all duration-300">
+    <section className="glass flex  w-full flex-col items-center justify-center space-y-5 bg-primary p-10 transition-all duration-300">
       <div className="flex h-fit w-full max-w-[600px] flex-col  items-center rounded-xl bg-base-100 p-10 lg:w-1/2">
         <Link
           href={"/"}

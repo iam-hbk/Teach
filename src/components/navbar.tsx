@@ -1,10 +1,11 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import uj_logo from "@/assets/uj_logo.svg";
 import { usePathname } from "next/navigation";
+import SearchModal from "./search-modal";
 type Props = {};
 
 const Links = [
@@ -37,9 +38,30 @@ const Links = [
 
 const Navbar = (props: Props) => {
   const path = usePathname();
+
+  //hide the navbar on scroll up and show it on scroll down
+  const [prevScrollPos, setPrevScrollPos] = React.useState(0);
+  const [visible, setVisible] = React.useState(true);
+  const handleScroll = React.useCallback(() => {
+    const currentScrollPos = window.scrollY;
+    setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+    setPrevScrollPos(currentScrollPos);
+  }, [prevScrollPos]);
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
+
   if (path === "/login" || path === "/register") return null;
+
   return (
-    <nav className="navbar sticky top-0 border border-red-500 bg-base-100  ">
+    <nav
+      style={{
+        top: visible ? "0" : "-130px",
+      }}
+      className="navbar fixed top-0 z-50 bg-base-100 rounded-b-2xl transition-all duration-500"
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -81,10 +103,10 @@ const Navbar = (props: Props) => {
               width={180}
               height={180}
               alt="uj logo"
-              className="min-h-[50px] min-w-[180px]"
+              className="min-h-[50px] min-w-[180px] w-auto h-auto"
             />
           </Link>
-          <h1 className="hidden text-center text-xl font-bold lg:inline-flex">
+          <h1 className="text-md 700px:inline-flex hidden text-center font-bold ">
             Department of Industrial Psychology and People Management
           </h1>
         </div>
@@ -95,7 +117,7 @@ const Navbar = (props: Props) => {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="Í link no-underline hover:underline"
+                className="Í link no-underline hover:text-primary hover:underline"
               >
                 {link.label}
               </Link>
@@ -104,17 +126,11 @@ const Navbar = (props: Props) => {
         </ul>
       </div>
       <div className="navbar-end space-x-2">
-        <div className="form-control hidden md:inline-flex">
-          <input
-            type="search"
-            placeholder="Search"
-            className="input input-bordered input-md w-24 focus:outline-none focus:ring-1 focus:ring-accent md:w-auto"
-          />
-        </div>
+        <SearchModal />
         <Link href={"/login"} className="btn  btn-primary btn-outline">
           Login
         </Link>
-        <Link href={"/register"} className="btn  btn-primary">
+        <Link href={"/register"} className="btn btn-secondary btn-outline">
           register
         </Link>
       </div>

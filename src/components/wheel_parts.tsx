@@ -23,7 +23,6 @@ const SubSegmentPath = styled.path`
     fill 0.3s;
   &:hover {
     cursor: pointer;
-    fill-opacity: 0.8;
   }
 `;
 // Create a styled component for segments
@@ -36,7 +35,6 @@ const SegmentPath = styled.path`
   &:hover,
   &.hovered {
     cursor: pointer;
-    fill-opacity: 0.8;
     transform: scale(1.1);
   }
 `;

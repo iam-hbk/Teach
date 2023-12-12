@@ -9,6 +9,7 @@ import { IoMdArrowBack } from "react-icons/io";
 import Link from "next/link";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 const formSchema = z.object({
   email: z.string().email("Please enter a valid email address"),
@@ -17,6 +18,7 @@ const formSchema = z.object({
 type TFormData = z.infer<typeof formSchema>;
 
 const Login = () => {
+  const [animationParent] = useAutoAnimate();
   const {
     register,
     handleSubmit,
@@ -68,6 +70,7 @@ const Login = () => {
         </h1>
         <h2 className="mb-5 text-3xl text-primary">Sign In</h2>
         <form
+          ref={animationParent}
           onSubmit={handleSubmit(onSubmit)}
           className="flex w-full flex-col items-center space-y-4 "
         >
