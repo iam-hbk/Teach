@@ -10,6 +10,7 @@ import Link from "next/link";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { loginAction } from "@/actions/auth";
 
 const formSchema = z.object({
   email: z.string().email("Please enter a valid email address"),
@@ -18,6 +19,7 @@ const formSchema = z.object({
 type TFormData = z.infer<typeof formSchema>;
 
 const Login = () => {
+  const session = null; //await getSession();
   const [animationParent] = useAutoAnimate();
   const {
     register,
@@ -72,6 +74,7 @@ const Login = () => {
         <form
           ref={animationParent}
           onSubmit={handleSubmit(onSubmit)}
+          // action={loginAction}
           className="flex w-full flex-col items-center space-y-4 "
         >
           <label className="form-control w-full max-w-xs">
