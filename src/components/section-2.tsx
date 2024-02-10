@@ -14,9 +14,9 @@ const Section2 = (props: Props) => {
   };
 
   return (
-    <section className="relative flex min-h-[80vh] w-full flex-col items-start gap-4 border border-red-500 p-14 md:flex-row">
+    <section className="relative flex min-h-[80vh] w-full flex-col items-start gap-4 p-14 md:flex-row">
       {/* Orange element */}
-      <div className="h-fit  min-w-[35%] rounded-md border-red-600 shadow-md">
+      <div className="h-fit  min-w-[35%] rounded-md shadow-md">
         <RadioSelection selected={selected} handleChange={handleChange} />
       </div>
       {selected === "overview" ? (

@@ -3,6 +3,7 @@ import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { Toaster } from "sonner";
+import Footer from "@/components/footer";
 
 const inter = Ubuntu({
   weight: ["300", "400", "500", "700"],
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Navbar />
         <Toaster richColors />
         {children}
+        <Footer/>
       </body>
     </html>
   );
