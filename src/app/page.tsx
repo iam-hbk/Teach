@@ -25,7 +25,7 @@ export default function Home() {
               >
                 How it works
               </SmoothLink>
-              <Link href="/how-it-works" className="btn-primary-content btn">
+              <Link href="/register" className="btn-primary-content btn">
                 Register
               </Link>
             </div>
