@@ -45,7 +45,7 @@ const Footer = (props: Props) => {
             height={200}
             alt="newsletter-image"
             src={Newslettrer}
-            className="h-auto w-auto"
+            className="h-auto w-auto max-w-[200px] max-h-[200px]"
           />
           <div>
             <fieldset className="form-control w-80">

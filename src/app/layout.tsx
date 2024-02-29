@@ -26,7 +26,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         <Toaster richColors />
+        <main className="min-h-screen justify-center items-center flex">
         {children}
+        </main>
         <Footer />
       </body>
     </html>

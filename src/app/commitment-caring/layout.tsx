@@ -1,9 +1,9 @@
 import CompetencyNav from "@/components/competency-nav";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Teaching Competency",
+  title: "Commitment Competency",
   description:
-    "Teaching competency is the ability to teach effectively. This is achieved through the knowledge of the subject matter and the ability to communicate it to the students in a way that they can understand. Teaching competency is also the ability to evaluate the students and ensure that they have understood the concepts taught.",
+    "Commitment competency is the ability to demonstrate dedication and loyalty to the organization. This is achieved through the ability to work hard and put in the extra effort to achieve the goals of the organization. Commitment competency is also the ability to be reliable and dependable and to follow through on commitments.",
 };
 
 export default function RootLayout({
