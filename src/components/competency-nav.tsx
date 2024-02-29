@@ -97,7 +97,6 @@ export default CompetencyNav;
 
 function getCompetency(path: string): string[] {
   const segments = path.split("/").filter((segment) => segment.length > 0);
-  console.log(segments);
   return segments;
 }
 function formatCompetency(competency: string) {
