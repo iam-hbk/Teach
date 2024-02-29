@@ -26,6 +26,7 @@ const config: Config = {
           success: "#15803d",
           warning: "#ff7300",
           error: "#dc2626",
+          teaching:"#0553B6"
         },
       },
     ],

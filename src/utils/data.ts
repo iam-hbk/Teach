@@ -106,7 +106,7 @@ const data = [
         color: "#0553B6",
       },
       {
-        title: "Your Teaching Philosophy",
+        title: "Teaching Philosophy",
         link: "/teaching/your-teaching-philosophy",
         color: "#1C6CD9",
       },

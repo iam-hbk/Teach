@@ -352,7 +352,10 @@ const NavigationWheel = () => {
                         subEndAngle,
                       )}
                       fill={subSegment.color}
-                      onClick={() => handleClick(subSegment.link)}
+                      onClick={() => {
+                        handleClick(subSegment.link);
+                        removeTooltip();
+                      }}
                       onMouseEnter={(e) => {
                         handleMouseEnter(index, subIndex);
                         showTooltip(subSegment, e);
@@ -370,7 +373,10 @@ const NavigationWheel = () => {
                       fontSize={fontSize}
                       fill="white"
                       transform={`rotate(${rotation}, ${textPosition.x}, ${textPosition.y})`}
-                      onClick={() => handleClick(subSegment.link)}
+                      onClick={() => {
+                        handleClick(subSegment.link);
+                        removeTooltip();
+                      }}
                       onMouseEnter={(e) => {
                         handleMouseEnter(index, subIndex);
                         showTooltip(subSegment, e);
