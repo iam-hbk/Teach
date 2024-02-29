@@ -39,27 +39,30 @@ const Footer = (props: Props) => {
       </nav>
       <form>
         <h6 className="footer-title">Newsletter</h6>
-        <div className="flex flex-row gap-7 items-center"><Image
-          width={200}
-          height={200}
-          alt="newsletter-image"
-          src={Newslettrer}
-        />
-        <div>
-          <fieldset className="form-control w-80">
-            <label className="label">
-              <span className="label-text">Enter your email address</span>
-            </label>
-            <div className="join">
-              <input
-                type="text"
-                placeholder="username@site.com"
-                className="input join-item input-bordered"
-              />
-              <button className="btn btn-primary join-item">Subscribe</button>
-            </div>
-          </fieldset>
-        </div></div>
+        <div className="flex flex-row items-center gap-7">
+          <Image
+            width={200}
+            height={200}
+            alt="newsletter-image"
+            src={Newslettrer}
+            className="h-auto w-auto"
+          />
+          <div>
+            <fieldset className="form-control w-80">
+              <label className="label">
+                <span className="label-text">Enter your email address</span>
+              </label>
+              <div className="join">
+                <input
+                  type="text"
+                  placeholder="username@site.com"
+                  className="input join-item input-bordered"
+                />
+                <button className="btn btn-primary join-item">Subscribe</button>
+              </div>
+            </fieldset>
+          </div>
+        </div>
       </form>
     </footer>
   );
