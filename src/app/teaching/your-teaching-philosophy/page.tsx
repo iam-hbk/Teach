@@ -172,12 +172,12 @@ const YourTeachingPhilosophy = (props: Props) => {
               </Link>{" "}
               <span>
                 - Kenny, N., Berenson, C., Jeffs, C., Nowell, L., & Grant, K.
-                (2018)
+                (2018) 
               </span>
-              <button className="btn btn-link inline-flex  items-center gap-1">
+              <Link href={"https://utfs.io/f/f8ef22cb-ad83-40c5-b679-bbb2a4d5a903-6zimm5.pdf"} target="_blank" className="btn btn-link inline-flex  items-center gap-1">
                 <FaFileDownload />
                 Download
-              </button>
+              </Link>
             </li>
             <li>
               <Link
@@ -188,10 +188,10 @@ const YourTeachingPhilosophy = (props: Props) => {
                 Writing a Teaching Philosophy Statement
               </Link>{" "}
               <span>- Trinity College of Dublin, University of Dublin</span>
-              <button className="btn btn-link inline-flex  items-center gap-1">
+              <Link href={"https://utfs.io/f/7e3ee8ad-84c7-4fdb-ae78-cdc5cac4d1bd-6mzpz.pdf"} target="_blank" className="btn btn-link inline-flex  items-center gap-1">
                 <FaFileDownload />
                 Download
-              </button>
+              </Link>
             </li>
             <li>
               <Link href={"#"} className="link-primary underline">
@@ -199,10 +199,10 @@ const YourTeachingPhilosophy = (props: Props) => {
                 approach
               </Link>{" "}
               <span>- Medina & Draugalis (2013) - University of Oklahoma </span>
-              <button className="btn btn-link inline-flex  items-center gap-1">
+              <Link href={"https://utfs.io/f/00d74661-cd79-4c33-96f4-80aac88cbd11-w84ma7.pdf"} className="btn btn-link inline-flex  items-center gap-1">
                 <FaFileDownload />
                 Download
-              </button>
+              </Link>
             </li>
           </ul>
         </div>
