@@ -9,7 +9,7 @@ const WorkIntegratedLearning = (props: Props) => {
   return (
     <div className="container flex flex-col gap-4 lg:mt-8">
       <h1 className="m-3 self-center text-4xl font-bold uppercase text-blue-800">
-        TEACHING PHILOSOPHY
+        WORK INTEGRATED LEARNING
       </h1>
       <div className="collapse collapse-arrow rounded-none ">
         <input type="radio" name="my-accordion-2" defaultChecked />
@@ -73,7 +73,7 @@ const WorkIntegratedLearning = (props: Props) => {
               Work-integrated learning is considered a modality under
               Work-Integrated Education (WIE).
             </h5>
-            <p>
+            <p className="flex flex-col">
               UJ’s 2022 Policy on <b>Work-Integrated Education (WIE)</b>{" "}
               indicates that it is “embedded in a range of career-orientated
               programmes, allows for the acquisition of knowledge, skills and
@@ -83,20 +83,37 @@ const WorkIntegratedLearning = (props: Props) => {
               indicates that WIE “is a wide and inclusive concept which embraces
               different modalities of learning in action, and is commonly
               referred to as work integrated learning or WIL globally. Some of
-              the main modalities are: 
-              -Work-integrated learning (WIL),
-              -Problem-based learning (PBL), 
-              -Community based learning (CBL),
-              -Project-based learning (PjBL), 
-              -Simulations, -Teaching practice
-              (TP), 
-              -Service learning (SL), and 
-              -Internships. “(p. 2) 
-              These
-              modalities which allow for the practice of knowledge in different
-              fields of study, support the ‘learning to be’ philosophy of
-              teaching. The ‘learning to be’ teaching philosophy is defined in
-              the UJ Policy on Teaching and Learning (approved, 2016), as
+              the main modalities are:
+              <ul className="m-8 max-w-max list-inside list-none self-center ">
+                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
+                  Work-integrated learning (WIL),
+                </li>
+                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
+                  Problem-based learning (PBL),
+                </li>
+                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
+                  Community based learning (CBL),
+                </li>
+                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
+                  Project-based learning (PjBL),
+                </li>
+                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
+                  Simulations,
+                </li>
+                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
+                  Teaching practice (TP),
+                </li>
+                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
+                  Service learning (SL),and
+                </li>
+                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1 last:border-none">
+                  Internships. “(p. 2)
+                </li>
+              </ul>
+              These modalities which allow for the practice of knowledge in
+              different fields of study, support the ‘learning to be’ philosophy
+              of teaching. The ‘learning to be’ teaching philosophy is defined
+              in the UJ Policy on Teaching and Learning (approved, 2016), as
               follows: “Learning to be”: a view of higher education that
               conceptualises learning as becoming a practitioner of a knowledge
               and professional domain. Learning to be presupposes learning the

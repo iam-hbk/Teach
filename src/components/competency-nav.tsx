@@ -12,7 +12,7 @@ const CompetencyNav = (props: Props) => {
   const subCompetency = getCompetency(path)[1];
 
   return (
-    <div className="mt-3 flex w-full min-w-[100vw] flex-row items-center justify-between border border-red-600 bg-base-100 p-2 shadow-sm">
+    <div className="mt-3 flex w-full min-w-[100vw] flex-row items-center justify-between bg-base-100 p-2 shadow-sm">
       <div>
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
