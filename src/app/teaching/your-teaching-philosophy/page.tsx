@@ -13,7 +13,7 @@ const YourTeachingPhilosophy = (props: Props) => {
         </h1>
         <div className="collapse collapse-arrow rounded-none ">
           <input type="radio" name="my-accordion-2" defaultChecked />
-          <div className="collapse-title text-2xl uppercase ">Introduction</div>
+          <div  className="collapse-title text-teaching text-2xl uppercase ">Introduction</div>
           <div className="collapse-content">
             <p className="rounded-md bg-base-200/50 p-4">
               You are probably sitting by your computer now, thinking{" "}
@@ -37,7 +37,7 @@ const YourTeachingPhilosophy = (props: Props) => {
         </div>
         <div className="collapse collapse-arrow rounded-none ">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-2xl uppercase ">
+          <div  className="collapse-title text-teaching text-2xl uppercase ">
             WHAT IS A TEACHING PHILOSOPHY?
           </div>
           <div className="collapse-content">
@@ -76,7 +76,7 @@ const YourTeachingPhilosophy = (props: Props) => {
         </div>
         <div className="collapse collapse-arrow rounded-none ">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-2xl uppercase ">
+          <div  className="collapse-title text-teaching text-2xl uppercase ">
             WHAT IS THE PURPOSE OF A TEACHING PHILOSOPHY STATEMENT?
           </div>
           <div className="collapse-content">
@@ -90,7 +90,7 @@ const YourTeachingPhilosophy = (props: Props) => {
         </div>
         <div className="collapse collapse-arrow rounded-none ">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-2xl uppercase ">
+          <div  className="collapse-title text-teaching text-2xl uppercase ">
             RESOURCES - DEVELOPING A GREAT TEACHING PHILOSOPHY STATEMENT
           </div>
           <div className="collapse-content">

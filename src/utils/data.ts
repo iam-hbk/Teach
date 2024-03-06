@@ -101,13 +101,13 @@ const data = [
     link: "/teaching",
     subSegments: [
       {
-        title: "Supervision Skills",
-        link: "/teaching/supervision-skills",
+        title: "Teaching Philosophy",
+        link: "/teaching/your-teaching-philosophy",
         color: "#0553B6",
       },
       {
-        title: "Teaching Philosophy",
-        link: "/teaching/your-teaching-philosophy",
+        title: "Supervision Skills",
+        link: "/teaching/supervision-skills",
         color: "#1C6CD9",
       },
       {
@@ -116,8 +116,8 @@ const data = [
         color: "#3385FC",
       },
       {
-        title: "Incorporating Work Integrated Learning",
-        link: "/teaching/incorporating-work-integrated-learning",
+        title: "Work Integrated Learning",
+        link: "/teaching/work-integrated-learning",
         color: "#4A9DFF",
       },
       {
@@ -162,6 +162,6 @@ const data = [
   },
 ];
 export type TWheelData = typeof data;
-export type TWheelSegment = typeof data[0];
-export type TWheelSubSegment = typeof data[0]["subSegments"][0];
+export type TWheelSegment = (typeof data)[0];
+export type TWheelSubSegment = (typeof data)[0]["subSegments"][0];
 export default data;

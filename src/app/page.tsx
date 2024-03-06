@@ -1,6 +1,6 @@
 import NavigationWheel from "@/components/wheel";
 import Image from "next/image";
-import teach_logo from "@/assets/teach_logo.svg";
+import teach_logo from "@/assets/teach_logo_light.svg";
 import Link from "next/link";
 import LandingPageText from "@/components/landing-page-text";
 import SmoothLink from "@/components/smooth-link";
@@ -8,7 +8,7 @@ import Section2 from "@/components/section-2";
 export default function Home() {
   return (
     <main>
-      <section className="glass hero min-h-screen bg-opacity-60 bg-gradient-to-tr from-primary to-secondary">
+      <section className="glass hero min-h-screen bg-opacity-60 bg-gradient-to-tr from-primary to-secondary/80">
         {/* <div className="mask mask-parallelogram absolute right-[-35%] top-0 h-full w-full bg-primary bg-opacity-50" /> */}
         <div className="hero-content mt-16 flex-col lg:flex-row">
           <div className="flex w-[40%] flex-col items-center justify-evenly space-y-3">

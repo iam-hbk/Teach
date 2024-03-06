@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <section className="relative mb-8 flex min-h-screen flex-col items-center overflow-auto bg-base-100 pt-[120px]">
       <CompetencyNav />
-      {children}
+      <div className="mx-10">{children}</div>
     </section>
   );
 }
