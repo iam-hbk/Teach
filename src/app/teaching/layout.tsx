@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 const AlternateLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <section className="relative bg-blue-500 mb-8 flex min-w-full min-h-screen overflow-auto bg-base-100 pt-[120px]">
+    <section className="relative bg-blue-500 mb-8 flex min-w-full min-h-screen overflow-auto bg-base-100 ">
       <nav className="bg-red-400"><Link href={"/"} className="link-primary underline">Home</Link></nav>
       <div className="">{children}</div>
     </section>

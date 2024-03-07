@@ -45,14 +45,43 @@ export default function Home() {
             stages (Lecturer to Professor), complemented by a{" "}
             <strong>self-checklist</strong> for assessing skills, knowledge, and
             personal attributes. It provides resources like{" "}
-            <Link className="link link-primary no-underline capitalize" href="/links">links</Link>,{" "}
-            <Link className="link link-primary no-underline capitalize" href="/contact-info">contact information</Link>,{" "}
-            <Link className="link link-primary no-underline capitalize" href="/literature">literature</Link>,{" "}
-            <Link className="link link-primary no-underline capitalize" href="/policies">UJ policies</Link>, and{" "}
-            <Link className="link link-primary no-underline capitalize" href="/videos">videos</Link> to address competency gaps and
-            supports professional development, performance management, promotion
-            applications, and access to a wide range of educational materials
-            from various reputable sources.
+            <Link
+              className="link-primary link capitalize no-underline"
+              href="/links"
+            >
+              links
+            </Link>
+            ,{" "}
+            <Link
+              className="link-primary link capitalize no-underline"
+              href="/contact-info"
+            >
+              contact information
+            </Link>
+            ,{" "}
+            <Link
+              className="link-primary link capitalize no-underline"
+              href="/literature"
+            >
+              literature
+            </Link>
+            ,{" "}
+            <Link
+              className="link-primary link capitalize no-underline"
+              href="/policies"
+            >
+              UJ policies
+            </Link>
+            , and{" "}
+            <Link
+              className="link-primary link capitalize no-underline"
+              href="/videos"
+            >
+              videos
+            </Link>{" "}
+            to address competency gaps and supports professional development,
+            performance management, promotion applications, and access to a wide
+            range of educational materials from various reputable sources.
           </p>
         </div>
       </div>
