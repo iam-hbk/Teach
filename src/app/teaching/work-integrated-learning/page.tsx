@@ -7,7 +7,7 @@ type Props = {};
 
 const WorkIntegratedLearning = (props: Props) => {
   return (
-    <div className="container flex flex-col gap-4 lg:mt-8">
+    <div className="container max-w-3xl p-2 flex flex-col gap-4 lg:mt-8">
       <h1 className="m-3 self-center text-4xl font-bold uppercase text-blue-800">
         WORK INTEGRATED LEARNING
       </h1>
@@ -73,7 +73,7 @@ const WorkIntegratedLearning = (props: Props) => {
               Work-integrated learning is considered a modality under
               Work-Integrated Education (WIE).
             </h5>
-            <p className="flex flex-col">
+            <div className="flex flex-col">
               UJ’s 2022 Policy on <b>Work-Integrated Education (WIE)</b>{" "}
               indicates that it is “embedded in a range of career-orientated
               programmes, allows for the acquisition of knowledge, skills and
@@ -86,25 +86,25 @@ const WorkIntegratedLearning = (props: Props) => {
               the main modalities are:
               <ul className="m-8 max-w-max list-inside list-none self-center ">
                 <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Work-integrated learning (WIL),
+                  Work-integrated learning (WIL)
                 </li>
                 <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Problem-based learning (PBL),
+                  Problem-based learning (PBL)
                 </li>
                 <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Community based learning (CBL),
+                  Community based learning (CBL)
                 </li>
                 <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Project-based learning (PjBL),
+                  Project-based learning (PjBL)
                 </li>
                 <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Simulations,
+                  Simulations
                 </li>
                 <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Teaching practice (TP),
+                  Teaching practice (TP)
                 </li>
                 <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Service learning (SL),and
+                  Service learning (SL)and
                 </li>
                 <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1 last:border-none">
                   Internships. “(p. 2)
@@ -124,7 +124,7 @@ const WorkIntegratedLearning = (props: Props) => {
               theories of the domain, as well as the practices of inquiry, to
               identify and solve problems or interpret and address everyday
               issues.
-            </p>
+            </div>
           </div>
         </div>
       </div>
