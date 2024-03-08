@@ -1,4 +1,5 @@
 import CompetencyNav from "@/components/competency-nav";
+import SideBar from "@/components/sidebar";
 import type { Metadata } from "next";
 import Link from "next/link";
 export const metadata: Metadata = {
@@ -22,9 +23,9 @@ export const metadata: Metadata = {
 
 const AlternateLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <section className="relative bg-blue-500 mb-8 flex min-w-full min-h-screen overflow-auto bg-base-100 ">
-      <nav className="bg-red-400"><Link href={"/"} className="link-primary underline">Home</Link></nav>
-      <div className="">{children}</div>
+    <section className="bg-base-100 relative flex flex-row justify-start">
+      <SideBar />
+      <div className="max-h-screen overflow-scroll p-10 py-5">{children}</div>
     </section>
   );
 };

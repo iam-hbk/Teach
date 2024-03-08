@@ -7,7 +7,7 @@ type Props = {};
 
 const WorkIntegratedLearning = (props: Props) => {
   return (
-    <div className="container max-w-3xl p-2 flex flex-col gap-4 lg:mt-8">
+    <div className="container flex flex-col gap-4 lg:mt-8">
       <h1 className="m-3 self-center text-4xl font-bold uppercase text-blue-800">
         WORK INTEGRATED LEARNING
       </h1>

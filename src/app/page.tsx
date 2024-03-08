@@ -5,6 +5,7 @@ import Link from "next/link";
 import LandingPageText from "@/components/landing-page-text";
 import SmoothLink from "@/components/smooth-link";
 import Section2 from "@/components/section-2";
+import Footer from "@/components/footer";
 export default function Home() {
   return (
     <main>
@@ -87,6 +88,7 @@ export default function Home() {
       </div>
 
       <Section2 />
+      <Footer />
     </main>
   );
 }
