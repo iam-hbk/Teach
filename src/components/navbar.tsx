@@ -31,7 +31,7 @@ const Links = [
     label: "Discussion Forum",
   },
   {
-    href: "/contact",
+    href: "/#footer",
     label: "Contact Us",
   },
 ];

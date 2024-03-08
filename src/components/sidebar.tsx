@@ -5,21 +5,32 @@ import { CgMenuLeft, CgSelect } from "react-icons/cg";
 import data from "@/utils/data";
 import Link from "next/link";
 type Props = {};
+import TeachLogo from "@/assets/teach_logo.svg";
+import Image from "next/image";
+// import UJ
 
 const SideBar = (props: Props) => {
   const path = usePathname();
-  const competency_ = formatCompetency(getCompetency(path)[0]);
   const subCompetency = getCompetency(path)[1];
 
   return (
-    <nav className="max-h-screen w-[26%] min-w-[26%] flex-col overflow-scroll p-4">
-      <ul className="menu rounded-box w-full min-w-full bg-base-200">
+    <>
+      <ul className="menu rounded-box w-full min-w-full overflow-scroll bg-base-100 p-4">
+        <Image
+          src={TeachLogo}
+          height={100}
+          width={100}
+          alt="Teach Logo"
+          className="h-100 m-5 w-auto self-start"
+        />
         {data.map((competency) => (
           <ul key={competency.title}>
             <li>
               <details open>
                 <summary>
-                  <Link href={competency.link}>{competency.title}</Link>
+                  <Link className="link-hover" href={competency.link}>
+                    {competency.title}
+                  </Link>
                 </summary>
                 <ul>
                   {competency.subSegments.map((segment) => (
@@ -36,9 +47,7 @@ const SideBar = (props: Props) => {
                             : "inherit",
                       }}
                     >
-                      <Link href={segment.link}>
-                        {segment.title}
-                      </Link>
+                      <Link href={segment.link}>{segment.title}</Link>
                     </li>
                   ))}
                 </ul>
@@ -47,7 +56,7 @@ const SideBar = (props: Props) => {
           </ul>
         ))}
       </ul>
-    </nav>
+    </>
   );
 };
 
