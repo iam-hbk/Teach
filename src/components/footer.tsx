@@ -6,7 +6,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="footer bg-base-200 p-10 text-base-content">
+    <footer id="footer" className="footer bg-base-200 p-10 text-base-content">
       <nav>
         <h6 className="footer-title">Product</h6>
         <Link href={"#privacy-policies"} className="link-hover link">

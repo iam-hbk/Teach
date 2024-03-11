@@ -12,7 +12,7 @@ const CompetencyNav = (props: Props) => {
   const subCompetency = getCompetency(path)[1];
 
   return (
-    <div className="mt-3 flex w-full flex-row items-center justify-between bg-base-100 p-2 shadow-sm">
+    <div className="mt-3 flex w-full min-w-[100vw] flex-row items-center justify-between bg-base-100 p-2 shadow-sm">
       <div>
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -42,7 +42,7 @@ const CompetencyNav = (props: Props) => {
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-ghost flex min-w-[128px] flex-row w-max"
+            className="btn btn-ghost flex w-max min-w-[128px] flex-row"
             style={{
               color: competency.color,
             }}
@@ -72,13 +72,17 @@ const CompetencyNav = (props: Props) => {
           </ul>
         </div>
       </div>
-      <div className="hidden w-full flex-grow  flex-row items-center justify-start gap-2 px-1 lg:flex">
+      <div className="hidden w-full flex-row items-center justify-around gap-2 px-1 lg:flex">
         {competency.subSegments.map((segment) => (
           <Link
             style={{
               color:
                 subCompetency === getCompetency(segment.link)[1]
                   ? competency.color
+                  : "inherit",
+              backgroundColor:
+                subCompetency === getCompetency(segment.link)[1]
+                  ? competency.color + "20"
                   : "inherit",
             }}
             className="rounded-md p-2 text-center text-sm transition-colors duration-300 hover:bg-base-200/50"
