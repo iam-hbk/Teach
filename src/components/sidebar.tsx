@@ -11,7 +11,8 @@ import Image from "next/image";
 
 const SideBar = (props: Props) => {
   const path = usePathname();
-  const subCompetency = getCompetency(path)[1];
+  const currentCompetency = getCompetency(path)[1];
+  const currentSubCompetency = getCompetency(path)[2];
 
   return (
     <>
@@ -26,10 +27,21 @@ const SideBar = (props: Props) => {
         {data.map((competency) => (
           <ul key={competency.title}>
             <li>
-              <details open>
+              <details
+                open={
+                  competency.title.toLocaleLowerCase() === currentCompetency
+                }
+              >
                 <summary>
                   <Link className="link-hover" href={competency.link}>
-                    {competency.title}
+                    <span
+                      style={{
+                        color: competency.color,
+                      }}
+                    >
+                      {competency.title.charAt(0)}
+                    </span>
+                    {competency.title.substring(1)}
                   </Link>
                 </summary>
                 <ul>
@@ -38,14 +50,17 @@ const SideBar = (props: Props) => {
                       key={segment.title}
                       style={{
                         color:
-                          subCompetency === getCompetency(segment.link)[1]
+                          currentSubCompetency ===
+                          getCompetency(segment.link)[2]
                             ? competency.color
                             : "inherit",
                         backgroundColor:
-                          subCompetency === getCompetency(segment.link)[1]
+                          currentSubCompetency ===
+                          getCompetency(segment.link)[2]
                             ? competency.color + "20"
                             : "inherit",
                       }}
+                      className="rounded-lg"
                     >
                       <Link href={segment.link}>{segment.title}</Link>
                     </li>
@@ -65,16 +80,4 @@ export default SideBar;
 function getCompetency(path: string): string[] {
   const segments = path.split("/").filter((segment) => segment.length > 0);
   return segments;
-}
-function formatCompetency(competency: string) {
-  if (competency === "teaching") {
-    return data[3];
-  } else if (competency === "expertise") {
-    return data[4];
-  } else if (competency === "assessment") {
-    return data[0];
-  } else if (competency === "commitment-caring") {
-    return { ...data[1], title: "Commitment & Caring" };
-  }
-  return data[2];
 }
