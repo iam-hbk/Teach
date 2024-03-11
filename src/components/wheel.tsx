@@ -2,8 +2,11 @@
 
 import React, { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import segments, { TWheelSegment, TWheelSubSegment } from "@/utils/data";
-import logo from "@/assets/teach_logo.svg";
+import {
+  TWheelSegment,
+  TWheelSubSegment,
+  wheelData as segments,
+} from "@/utils/data";
 import { useCallback } from "react";
 import {
   Wheel,
@@ -156,7 +159,7 @@ const NavigationWheel = () => {
       <SVG viewBox="-70 10 720 620">
         {/* Draw the central circle with "TEACH" text */}
         <circle cx="300" cy="300" r="100" fill="white" />
-
+        {/* Text for TEACH in the circle */}
         <text
           x={230}
           y="270"
