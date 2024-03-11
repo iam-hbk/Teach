@@ -31,7 +31,7 @@ const Links = [
     label: "Discussion Forum",
   },
   {
-    href: "/contact",
+    href: "/#footer",
     label: "Contact Us",
   },
 ];
@@ -53,7 +53,8 @@ const Navbar = (props: Props) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
-  if (path === "/login" || path === "/register") return null;
+  // if (path === "/login" || path === "/register") return null;
+  if (path !== "/") return null;
 
   return (
     <nav

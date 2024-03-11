@@ -11,6 +11,9 @@ const config: Config = {
       screens: {
         "700px": "700px",
       },
+      colors:{
+        "teaching":"#0553B6"
+      }
     },
   },
   daisyui: {
@@ -26,7 +29,6 @@ const config: Config = {
           success: "#15803d",
           warning: "#ff7300",
           error: "#dc2626",
-          teaching:"#0553B6"
         },
       },
     ],
