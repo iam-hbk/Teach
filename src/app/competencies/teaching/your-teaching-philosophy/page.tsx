@@ -8,10 +8,9 @@ type Props = {};
 const YourTeachingPhilosophy = (props: Props) => {
   return (
     <>
-      <h1 className="my-10 text-6xl font-bold capitalize text-blue-800">
+      <h1 className="my-10 text-6xl font-bold capitalize text-teaching">
         TEACHING PHILOSOPHY
       </h1>
-
       <div className="text-teaching text-2xl capitalize hover:underline cursor-pointer">
         Introduction
       </div>

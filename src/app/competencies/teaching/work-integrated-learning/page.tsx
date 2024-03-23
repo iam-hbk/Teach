@@ -1,6 +1,5 @@
 import { BsInfoCircleFill } from "react-icons/bs";
 import Link from "next/link";
-import { CiSaveDown1 } from "react-icons/ci";
 import { FaFileDownload } from "react-icons/fa";
 
 type Props = {};
@@ -8,123 +7,112 @@ type Props = {};
 const WorkIntegratedLearning = (props: Props) => {
   return (
     <>
-      <h1 className="m-3 self-center text-4xl font-bold uppercase text-blue-800">
+      <h1 className="my-10 text-6xl font-bold capitalize text-teaching">
         WORK INTEGRATED LEARNING
       </h1>
-      <div className="collapse collapse-arrow rounded-none ">
-        <input type="radio" name="my-accordion-2" defaultChecked />
-        <div className="text-teaching collapse-title text-2xl uppercase ">
-          Introduction
-        </div>
-        <div className="collapse-content">
-          <p className="rounded-md bg-base-200/50 p-4">
-            So, you are tasked with including a{" "}
-            <b>Work-Integrated Learning (WIL)</b>
-            component in your module; what do you do? The first thing is to
-            understand WIL and its purpose in any curriculum. So…
-          </p>
+      <div className="cursor-pointer text-2xl capitalize text-teaching hover:underline">
+        Introduction
+      </div>
+      <div className="">
+        <p className="mb-10 rounded-md bg-base-200/50 p-4">
+          So, you are tasked with including a{" "}
+          <b>Work-Integrated Learning (WIL)</b>
+          component in your module; what do you do? The first thing is to
+          understand WIL and its purpose in any curriculum. So…
+        </p>
+      </div>
+      <div className="collapse-title text-2xl uppercase text-teaching ">
+        What is work-integrated learning?
+      </div>
+      <div className="">
+        <div className="mb-10 rounded-md bg-base-200/50 p-4">
+          “WIL is used as an umbrella term to describe curricular, pedagogic and
+          assessment practices across a range of academic disciplines that
+          integrate formal learning and workplace concerns. The integration of
+          theory and practice in student learning can occur through a range of
+          WIL approaches, apart from formal or informal work placements. (CHE-
+          Work Integrated Learning: Good Practice Guide, 2011, p. 4)
         </div>
       </div>
-      <div className="collapse collapse-arrow rounded-none ">
-        <input type="radio" name="my-accordion-2" />
-        <div className="text-teaching collapse-title text-2xl uppercase ">
-          WHAT IS WORK INTEGRATED LEARNING?
-        </div>
-        <div className="collapse-content">
-          <div className="rounded-md bg-base-200/50 p-4">
-            “WIL is used as an umbrella term to describe curricular, pedagogic
-            and assessment practices across a range of academic disciplines that
-            integrate formal learning and workplace concerns. The integration of
-            theory and practice in student learning can occur through a range of
-            WIL approaches, apart from formal or informal work placements. (CHE-
-            Work Integrated Learning: Good Practice Guide, 2011, p. 4)
-          </div>
+      <div className="collapse-title text-2xl uppercase text-teaching ">
+        What is the purpose of work-integrated learning?
+      </div>
+      <div className="">
+        <div className="mb-10 rounded-md bg-base-200/50 p-4">
+          “WIL is primarily intended to enhance student learning, and to this
+          end, several innovative curricular, pedagogical and assessment forms
+          have developed in response to concerns about graduateness,
+          employability and civic responsibility; examples include
+          action-learning, apprenticeships, cooperative education, experiential
+          learning, inquiry learning, inter-professional learning, practicum
+          placements, problem-based learning, project-based learning, scenario
+          learning, service-learning, team-based learning, virtual or simulated
+          WIL learning, work-based learning, work experience, workplace
+          learning, and so on.” (CHE- Work Integrated Learning: Good Practice
+          Guide, 2011, p. 4)
         </div>
       </div>
-      <div className="collapse collapse-arrow rounded-none ">
-        <input type="radio" name="my-accordion-2" />
-        <div className="text-teaching collapse-title text-2xl uppercase ">
-          WHAT IS THE PURPOSE OF WORK-INTEGRATED LEARNING?
-        </div>
-        <div className="collapse-content">
-          <div className="rounded-md bg-base-200/50 p-4">
-            “WIL is primarily intended to enhance student learning, and to this
-            end, several innovative curricular, pedagogical and assessment forms
-            have developed in response to concerns about graduateness,
-            employability and civic responsibility; examples include
-            action-learning, apprenticeships, cooperative education,
-            experiential learning, inquiry learning, inter-professional
-            learning, practicum placements, problem-based learning,
-            project-based learning, scenario learning, service-learning,
-            team-based learning, virtual or simulated WIL learning, work-based
-            learning, work experience, workplace learning, and so on.” (CHE-
-            Work Integrated Learning: Good Practice Guide, 2011, p. 4)
-          </div>
-        </div>
+      <div className="collapse-title text-2xl uppercase text-teaching ">
+        Ressources - work-integrated learning
       </div>
-      <div className="collapse collapse-arrow rounded-none ">
-        <input type="radio" name="my-accordion-2" />
-        <div className="text-teaching collapse-title text-2xl uppercase ">
-          RESOURCES - WORK INTEGRATED LEARNING
-        </div>
-        <div className="collapse-content">
-          <div className="rounded-md bg-base-200/50 p-4">
-            <h5 className="my-5">
-              Work-integrated learning is considered a modality under
-              Work-Integrated Education (WIE).
-            </h5>
-            <div className="flex flex-col">
-              UJ’s 2022 Policy on <b>Work-Integrated Education (WIE)</b>{" "}
-              indicates that it is “embedded in a range of career-orientated
-              programmes, allows for the acquisition of knowledge, skills and
-              behaviours by means of blended lectures and practical work,
-              complemented by contextualised and well-structured authentic
-              modalities of learning in action.” (p. 1) The UJ Policy further
-              indicates that WIE “is a wide and inclusive concept which embraces
-              different modalities of learning in action, and is commonly
-              referred to as work integrated learning or WIL globally. Some of
-              the main modalities are:
-              <ul className="m-8 max-w-max list-inside list-none self-center ">
-                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Work-integrated learning (WIL)
-                </li>
-                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Problem-based learning (PBL)
-                </li>
-                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Community based learning (CBL)
-                </li>
-                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Project-based learning (PjBL)
-                </li>
-                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Simulations
-                </li>
-                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Teaching practice (TP)
-                </li>
-                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1">
-                  Service learning (SL)and
-                </li>
-                <li className="m-1 list-item rounded-md border-b-2 border-gray-300 bg-base-200/80 px-3 py-1 last:border-none">
-                  Internships. “(p. 2)
-                </li>
-              </ul>
-              These modalities which allow for the practice of knowledge in
-              different fields of study, support the ‘learning to be’ philosophy
-              of teaching. The ‘learning to be’ teaching philosophy is defined
-              in the UJ Policy on Teaching and Learning (approved, 2016), as
-              follows: “Learning to be”: a view of higher education that
-              conceptualises learning as becoming a practitioner of a knowledge
-              and professional domain. Learning to be presupposes learning the
-              practices of the knowledge domain (discipline or profession),
-              which include principles, dispositions, attributes, competencies,
-              activities, skills, procedures and values. It also requires
-              learning how to best utilise the conceptual frameworks and/or
-              theories of the domain, as well as the practices of inquiry, to
-              identify and solve problems or interpret and address everyday
-              issues.
-            </div>
+      <div className="">
+        <div className="mb-10 rounded-md bg-base-200/50 p-4">
+          <h5 className="my-5">
+            Work-integrated learning is considered a modality under
+            Work-Integrated Education (WIE).
+          </h5>
+          <div className="flex flex-col">
+            UJ’s 2022 Policy on <b>Work-Integrated Education (WIE)</b> indicates
+            that it is “embedded in a range of career-orientated programmes,
+            allows for the acquisition of knowledge, skills and behaviours by
+            means of blended lectures and practical work, complemented by
+            contextualised and well-structured authentic modalities of learning
+            in action.” (p. 1) The UJ Policy further indicates that WIE “is a
+            wide and inclusive concept which embraces different modalities of
+            learning in action, and is commonly referred to as work integrated
+            learning or WIL globally. Some of the main modalities are:
+            <ul className="m-8 max-w-max list-inside list-none self-center text-primary ">
+              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+                Work-integrated learning (WIL)
+              </li>
+              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+                Problem-based learning (PBL)
+              </li>
+              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+                Community based learning (CBL)
+              </li>
+              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+                Project-based learning (PjBL)
+              </li>
+              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+                Simulations
+              </li>
+              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+                Teaching practice (TP)
+              </li>
+              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+                Service learning (SL)and
+              </li>
+              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2 ">
+                Internships. “(p. 2)
+              </li>
+            </ul>
+            These modalities which allow for the practice of knowledge in
+            different fields of study, support the ‘learning to be’ philosophy
+            of teaching. The ‘learning to be’ teaching philosophy is defined in
+            the UJ Policy on Teaching and Learning (approved, 2016), as follows:
+            <p className="m-6 font-light italic">
+              <em className="font-bold text-secondary">“Learning to be” </em>
+              <br /> A view of higher education that conceptualises learning as
+              becoming a practitioner of a knowledge and professional domain.
+              Learning to be presupposes learning the practices of the knowledge
+              domain (discipline or profession), which include principles,
+              dispositions, attributes, competencies, activities, skills,
+              procedures and values. It also requires learning how to best
+              utilise the conceptual frameworks and/or theories of the domain,
+              as well as the practices of inquiry, to identify and solve
+              problems or interpret and address everyday issues.
+            </p>
           </div>
         </div>
       </div>
@@ -174,7 +162,7 @@ const WorkIntegratedLearning = (props: Props) => {
         </ul>
       </div>
       <span className="font-bold text-secondary">Books/Guides</span>
-      <div className="rounded-md bg-base-200/50 p-4">
+      <div className="mb-10 rounded-md bg-base-200/50 p-4">
         <ul className="list-inside list-disc">
           <li>
             <Link
