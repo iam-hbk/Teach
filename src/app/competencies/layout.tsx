@@ -35,12 +35,12 @@ const Nav_elements = [
 ];
 const AlternateLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <section className="relative flex max-h-screen flex-row justify-start gap-4 overflow-hidden bg-base-200 min-w-full px-4">
-      <nav className="hide-scrollbar min-h-max max-w-xs min-w-[300px] overflow-scroll py-5">
+    <section className="relative  flex max-h-screen flex-row justify-start gap-4 overflow-hidden bg-base-200 min-h-screen min-w-full px-4">
+      <nav className="hide-scrollbar min-h-max max-w-xs min-w-[20rem] overflow-scroll py-5">
         <SideBar />
       </nav>
       <div className="flex flex-col gap-4 overflow-scroll py-5 flex-grow">
-        <div className="min-h-16 sticky top-0 flex flex-row items-center justify-start gap-4 rounded-lg bg-base-100 px-4">
+        <div className="min-h-16 shadow-md sticky top-0 flex flex-row items-center justify-start gap-4 rounded-lg bg-base-100 px-4">
           {Nav_elements.map((e) => (
             <Link
               href={e.link}
@@ -51,7 +51,7 @@ const AlternateLayout = ({ children }: { children: React.ReactNode }) => {
             </Link>
           ))}
         </div>
-        <div className="flex-grow flex flex-col gap-4 rounded-lg bg-base-100 px-10">
+        <div className="flex-grow flex flex-col gap-4 rounded-lg bg-base-100 px-10 h-fit">
           {children}
         </div>
       </div>
