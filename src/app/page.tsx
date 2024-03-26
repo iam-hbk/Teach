@@ -8,7 +8,7 @@ import Section2 from "@/components/section-2";
 import Footer from "@/components/footer";
 export default function Home() {
   return (
-    <main>
+    <main className="min-w-full">
       <section className="glass hero min-h-screen bg-opacity-60 bg-gradient-to-tr from-primary to-secondary/80">
         {/* <div className="mask mask-parallelogram absolute right-[-35%] top-0 h-full w-full bg-primary bg-opacity-50" /> */}
         <div className="hero-content mt-16 flex-col lg:flex-row">
