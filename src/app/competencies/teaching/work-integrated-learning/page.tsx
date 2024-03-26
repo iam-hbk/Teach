@@ -7,8 +7,8 @@ type Props = {};
 const WorkIntegratedLearning = (props: Props) => {
   return (
     <>
-      <h1 className="my-10 text-6xl font-bold capitalize text-teaching">
-        WORK INTEGRATED LEARNING
+      <h1 className="my-10 text-6xl font-bold uppercase text-teaching">
+        Work Intergrated Learning
       </h1>
       <div className="cursor-pointer text-2xl capitalize text-teaching hover:underline">
         Introduction
@@ -21,7 +21,7 @@ const WorkIntegratedLearning = (props: Props) => {
           understand WIL and its purpose in any curriculum. So…
         </p>
       </div>
-      <div className="collapse-title text-2xl uppercase text-teaching ">
+      <div className=" text-2xl capitalize text-teaching ">
         What is work-integrated learning?
       </div>
       <div className="">
@@ -34,7 +34,7 @@ const WorkIntegratedLearning = (props: Props) => {
           Work Integrated Learning: Good Practice Guide, 2011, p. 4)
         </div>
       </div>
-      <div className="collapse-title text-2xl uppercase text-teaching ">
+      <div className=" text-2xl capitalize text-teaching ">
         What is the purpose of work-integrated learning?
       </div>
       <div className="">
@@ -52,7 +52,7 @@ const WorkIntegratedLearning = (props: Props) => {
           Guide, 2011, p. 4)
         </div>
       </div>
-      <div className="collapse-title text-2xl uppercase text-teaching ">
+      <div className=" text-2xl capitalize text-teaching ">
         Ressources - work-integrated learning
       </div>
       <div className="">
@@ -72,28 +72,28 @@ const WorkIntegratedLearning = (props: Props) => {
             learning in action, and is commonly referred to as work integrated
             learning or WIL globally. Some of the main modalities are:
             <ul className="m-8 max-w-max list-inside list-none self-center text-primary ">
-              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+              <li className="m-1 list-item rounded-md border border-b-2 border-primary/40 bg-base-200/80 px-3 py-2">
                 Work-integrated learning (WIL)
               </li>
-              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+              <li className="m-1 list-item rounded-md border border-b-2 border-primary/40 bg-base-200/80 px-3 py-2">
                 Problem-based learning (PBL)
               </li>
-              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+              <li className="m-1 list-item rounded-md border border-b-2 border-primary/40 bg-base-200/80 px-3 py-2">
                 Community based learning (CBL)
               </li>
-              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+              <li className="m-1 list-item rounded-md border border-b-2 border-primary/40 bg-base-200/80 px-3 py-2">
                 Project-based learning (PjBL)
               </li>
-              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+              <li className="m-1 list-item rounded-md border border-b-2 border-primary/40 bg-base-200/80 px-3 py-2">
                 Simulations
               </li>
-              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+              <li className="m-1 list-item rounded-md border border-b-2 border-primary/40 bg-base-200/80 px-3 py-2">
                 Teaching practice (TP)
               </li>
-              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2">
+              <li className="m-1 list-item rounded-md border border-b-2 border-primary/40 bg-base-200/80 px-3 py-2">
                 Service learning (SL)and
               </li>
-              <li className="m-1 list-item rounded-md border-b-2 border border-primary/40 bg-base-200/80 px-3 py-2 ">
+              <li className="m-1 list-item rounded-md border border-b-2 border-primary/40 bg-base-200/80 px-3 py-2 ">
                 Internships. “(p. 2)
               </li>
             </ul>
@@ -120,66 +120,66 @@ const WorkIntegratedLearning = (props: Props) => {
         <BsInfoCircleFill size={24} />
         Here are a few resources below
       </span>
-      <span className="font-bold text-secondary">
-        Links on Teaching Philosophy Statements from Leading Universities
-      </span>
       <div className=" rounded-md bg-base-200/50 p-4">
         <ul className="list-inside list-disc">
           <li>
             <Link
-              href={
-                "https://tll.mit.edu/teaching-resources/faculty-applications/teaching-philosophy-statements/"
-              }
+              href={"https://webapps.dhet.gov.za/iWIL"}
               target="_blank"
               className="link-primary underline"
             >
-              Massachusetts Institutes of Technology (MIT)
+              https://webapps.dhet.gov.za/iWIL
             </Link>
           </li>
           <li>
             <Link
               href={
-                "https://cft.vanderbilt.edu/guides-sub-pages/teaching-statements/"
+                "https://www.universityworldnews.com/post.php?story=20220412102705795"
               }
               target="_blank"
               className="link-primary underline"
             >
-              Vanderbilt University - Center for Teaching
+              Work-integrated learning to help with graduate unemployment; Edwin
+              Naidu 14 April 2022
             </Link>
           </li>
           <li>
             <Link
-              href={"https://crlt.umich.edu/tstrategies/tstpum"}
+              href={"www.ijwil.org"}
               target="_blank"
               className="link-primary underline"
             >
-              University of Michigan
+              International Journal of Work-Integrated Learning ISSN: 2538-1032
             </Link>{" "}
-            - this website from the CRLT Center for Research on Learning &
-            Teaching University of Michigan provides examples of teaching
-            philosophy statements across various disciplines
           </li>
         </ul>
       </div>
-      <span className="font-bold text-secondary">Books/Guides</span>
+      <span className="font-bold text-secondary">
+        Books/Guides/Journal Articles
+      </span>
       <div className="mb-10 rounded-md bg-base-200/50 p-4">
         <ul className="list-inside list-disc">
           <li>
+            <span>UJ WIE Policy on Work-Integrated Education (WIE) (2022)</span>
             <Link
-              href={"http://www.ucalgary.ca/taylorinstitute/resources"}
+              href={
+                "https://utfs.io/f/6f370b50-1eb6-4528-a1f5-8a9231583d09-45abpl.pdf"
+              }
               target="_blank"
-              className="link-primary underline"
+              className="btn btn-link inline-flex  items-center gap-1"
             >
-              Teaching Philosophies and Teaching Dossiers Guide. Calgary, AB:
-              Taylor Institute for Teaching and Learning
-            </Link>{" "}
+              <FaFileDownload />
+              Download
+            </Link>
+          </li>
+          <li>
             <span>
-              - Kenny, N., Berenson, C., Jeffs, C., Nowell, L., & Grant, K.
-              (2018)
+              A comparative study of cooperative education and workintegrated
+              learning in Germany, South Africa, and Namibia
             </span>
             <Link
               href={
-                "https://utfs.io/f/f8ef22cb-ad83-40c5-b679-bbb2a4d5a903-6zimm5.pdf"
+                "https://utfs.io/f/35fd7238-db77-4b04-8bbc-68d1b5c41471-sixt1j.pdf"
               }
               target="_blank"
               className="btn btn-link inline-flex  items-center gap-1"
@@ -188,35 +188,15 @@ const WorkIntegratedLearning = (props: Props) => {
               Download
             </Link>
           </li>
+
           <li>
-            <Link
-              href={"#"}
-              // target="_blank"
-              className="link-primary underline"
-            >
-              Writing a Teaching Philosophy Statement
-            </Link>{" "}
-            <span>- Trinity College of Dublin, University of Dublin</span>
+            <span>
+              A multiple case design for the investigation of information
+              management processes for work-integrated learning
+            </span>
             <Link
               href={
-                "https://utfs.io/f/7e3ee8ad-84c7-4fdb-ae78-cdc5cac4d1bd-6mzpz.pdf"
-              }
-              target="_blank"
-              className="btn btn-link inline-flex  items-center gap-1"
-            >
-              <FaFileDownload />
-              Download
-            </Link>
-          </li>
-          <li>
-            <Link href={"#"} className="link-primary underline">
-              Writing a Teaching Philosophy Statement - An evidence based
-              approach
-            </Link>{" "}
-            <span>- Medina & Draugalis (2013) - University of Oklahoma </span>
-            <Link
-              href={
-                "https://utfs.io/f/00d74661-cd79-4c33-96f4-80aac88cbd11-w84ma7.pdf"
+                "https://utfs.io/f/680a94f9-136a-4f75-8cda-0d2e4881c797-jm1bbl.pdf"
               }
               className="btn btn-link inline-flex  items-center gap-1"
             >
@@ -224,26 +204,36 @@ const WorkIntegratedLearning = (props: Props) => {
               Download
             </Link>
           </li>
-        </ul>
-      </div>
-      <span className="font-bold text-secondary">Videos</span>
-      <div className="rounded-md p-4 sm:max-w-xl">
-        <ul className="list-inside">
+
           <li>
-            <div className="relative overflow-hidden pb-[60%]">
-              <iframe
-                style={{
-                  left: 0,
-                  top: 0,
-                  height: "100%",
-                  width: "100%",
-                  position: "absolute",
-                }}
-                src={"https://www.youtube.com/embed/tbqS25mHCiM"}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+            <span>
+              Becoming a teacher Research on the work-integrated learning of
+              student teachers NWU
+            </span>
+            <Link
+              href={
+                "https://utfs.io/f/92fe6b6e-5f0a-4f68-807f-df4cbced8482-lyepr2.pdf"
+              }
+              className="btn btn-link inline-flex  items-center gap-1"
+            >
+              <FaFileDownload />
+              Download
+            </Link>
+          </li>
+          <li>
+            <span>
+              Work Integrated Learning for Student Career Prospects Govender &
+              Wait 2017
+            </span>
+            <Link
+              href={
+                "https://utfs.io/f/a43b6829-ccc9-4519-9979-77ebe293e543-alq5ii.pdf"
+              }
+              className="btn btn-link inline-flex  items-center gap-1"
+            >
+              <FaFileDownload />
+              Download
+            </Link>
           </li>
         </ul>
       </div>

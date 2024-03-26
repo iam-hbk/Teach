@@ -10,7 +10,7 @@ const data = [
         color: "#0553B6",
       },
       {
-        title: "Supervision Skills",
+        title: "Postgrad Supervision",
         link: "/competencies/teaching/supervision-skills",
         color: "#1C6CD9",
       },
@@ -270,7 +270,7 @@ export const wheelData = [
         color: "#0553B6",
       },
       {
-        title: "Supervision Skills",
+        title: "Postgrad Supervision",
         link: "/competencies/teaching/supervision-skills",
         color: "#1C6CD9",
       },
