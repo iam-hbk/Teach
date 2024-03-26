@@ -22,7 +22,7 @@ const SupervisionSkills = (props: Props) => {
           your skills as a supervisor. Let us begin…
         </p>
       </div>
-      <div className="text-2xl capitalize text-teaching ">
+      <div className="cursor-pointer text-2xl capitalize text-teaching hover:underline">
         What is postgraduate supervision &amp; Co-supervision?
       </div>
       <div className="mb-10 rounded-md bg-base-200/50 p-4">
@@ -43,7 +43,7 @@ const SupervisionSkills = (props: Props) => {
           multidisciplinary or for purposes of mentorship.
         </p>
       </div>
-      <div className="text-2xl capitalize text-teaching ">
+      <div className="cursor-pointer text-2xl capitalize text-teaching hover:underline">
         Responsabilities of the supervisor and co-supervisor
       </div>
       <div className="mb-10 rounded-md bg-base-200/50 p-4">
@@ -59,7 +59,7 @@ const SupervisionSkills = (props: Props) => {
           expectations by the supervisor and co-supervisor and of the student.
         </span>
       </div>
-      <div className="text-2xl text-teaching ">
+      <div className="cursor-pointer text-2xl text-teaching hover:underline">
         What CBE requirements need to be met for you to supervise or
         co-supervise masters and/or PhD students?
       </div>
@@ -71,7 +71,7 @@ const SupervisionSkills = (props: Props) => {
         research of Masters and PhD students. This document also provides
         guidelines on external assessors and assessments.
       </div>
-      <div className="text-2xl capitalize text-teaching ">
+      <div className="cursor-pointer text-2xl capitalize text-teaching hover:underline">
         The supervision process
       </div>
       <div className="mb-10 rounded-md bg-base-200/50 p-4">
@@ -121,7 +121,7 @@ const SupervisionSkills = (props: Props) => {
         dealing with master’s and doctoral degrees” (p. 2). (All of these
         policies can be found on the UJ Sharepoint).
       </div>
-      <div className="text-2xl capitalize text-teaching ">
+      <div className="cursor-pointer text-2xl capitalize text-teaching hover:underline">
         Building your supervision capability and experience (Taken from the
         postgraduate school)
       </div>
@@ -138,7 +138,7 @@ const SupervisionSkills = (props: Props) => {
           https://www.uj.ac.za/postgraduate-school/research-capacity-development/postgraduate-diploma-in-research-supervision/
         </Link>
       </div>
-      <div className="text-2xl capitalize text-teaching ">
+      <div className="cursor-pointer text-2xl capitalize text-teaching hover:underline">
         About Postgraduate Diploma in Research Supervision (Taken from the
         Postgraduate School)
       </div>
@@ -172,7 +172,7 @@ const SupervisionSkills = (props: Props) => {
         with good throughput and quality outcomes with their postgraduate
         students.
       </div>
-      <div className="text-2xl capitalize text-teaching ">
+      <div className="cursor-pointer text-2xl capitalize text-teaching hover:underline">
         UJ Centres that provide support (Taken from the UJ Sharepoint):
       </div>
       <div className="mb-10 rounded-md bg-base-200/50 p-4">
@@ -227,7 +227,7 @@ const SupervisionSkills = (props: Props) => {
         </Link>{" "}
         for enquiries.
       </div>
-      <div className="text-2xl capitalize text-teaching ">
+      <div className="cursor-pointer text-2xl capitalize text-teaching hover:underline">
         Additional resources
       </div>
       <div className="mb-10 rounded-md bg-base-200/50 p-4">
