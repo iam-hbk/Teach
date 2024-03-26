@@ -15,7 +15,7 @@ const data = [
         color: "#1C6CD9",
       },
       {
-        title: "Designing Learning Programmes & Modules",
+        title: "Learning Programmes",
         link: "/competencies/teaching/designing-learning-programmes-and-modules",
         color: "#3385FC",
       },
@@ -275,7 +275,7 @@ export const wheelData = [
         color: "#1C6CD9",
       },
       {
-        title: "Designing Learning Programmes & Modules",
+        title: "Learning Programmes",
         link: "/competencies/teaching/designing-learning-programmes-and-modules",
         color: "#3385FC",
       },
