@@ -25,13 +25,13 @@ const data = [
         color: "#4A9DFF",
       },
       {
-        title: "Classroom & Online-Based Teaching",
-        link: "/competencies/teaching/classroom-and-online-based-teaching",
+        title: "Contact and Online-based Teaching",
+        link: "/competencies/teaching/contact-and-online-based-teaching",
         color: "#62B5FF",
       },
       {
-        title: "Management & Organisational Skills",
-        link: "/competencies/teaching/management-and-organisational-skills",
+        title: "Work & Personal Management",
+        link: "/competencies/teaching/work-and-personal-management",
         color: "#79CDFF",
       },
       {
@@ -285,13 +285,13 @@ export const wheelData = [
         color: "#4A9DFF",
       },
       {
-        title: "Classroom & Online-Based Teaching",
-        link: "/competencies/teaching/classroom-and-online-based-teaching",
+        title: "Contact and Online-based Teaching",
+        link: "/competencies/teaching/contact-and-online-based-teaching",
         color: "#62B5FF",
       },
       {
-        title: "Management & Organisational Skills",
-        link: "/competencies/teaching/management-and-organisational-skills",
+        title: "Work & Personal Management",
+        link: "/competencies/teaching/work-and-personal-management",
         color: "#79CDFF",
       },
       {
