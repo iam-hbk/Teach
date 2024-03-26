@@ -35,8 +35,8 @@ const data = [
         color: "#79CDFF",
       },
       {
-        title: "Tutor Usage",
-        link: "/competencies/teaching/technology-integration",
+        title: "Tutors",
+        link: "/competencies/teaching/tutors",
         color: "#91E5FF",
       },
     ],
@@ -295,8 +295,8 @@ export const wheelData = [
         color: "#79CDFF",
       },
       {
-        title: "Tutor Usage",
-        link: "/competencies/teaching/technology-integration",
+        title: "Tutors            ",
+        link: "/competencies/teaching/tutors",
         color: "#91E5FF",
       },
     ],
