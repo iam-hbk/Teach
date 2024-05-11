@@ -23,8 +23,8 @@ const Links = [
     label: "Dashboard",
   },
   {
-    href: "/ressources",
-    label: "Ressources",
+    href: "/resources",
+    label: "Resources",
   },
   {
     href: "/forum",

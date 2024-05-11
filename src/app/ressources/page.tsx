@@ -2,10 +2,10 @@ import React from 'react'
 
 type Props = {}
 
-const Ressources = (props: Props) => {
+const Resources = (props: Props) => {
   return (
-    <div>Ressources</div>
+    <div>Resources</div>
   )
 }
 
-export default Ressources
+export default Resources

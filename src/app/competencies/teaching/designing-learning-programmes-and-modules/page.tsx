@@ -14,10 +14,11 @@ const LearningProgram = (props: Props) => {
         Introduction
       </div>
       <div className="mb-10 rounded-md bg-base-200/50 p-4">
-        Are you tasked with developing a new academic programme or to make
+        Are you tasked with developing a new academic programme or making
         amendments to an already existing academic programme? If so, it may seem
-        as a daunting task, but there a few steps that will be recommended here
-        that will help you. <br />
+        like a daunting task, but there are recommended steps that you can
+        follow to help you.
+        <br />
         <br />
         The decision to embark on developing a new programme usually begins at
         the departmental level, therefore it is important that you work
@@ -39,14 +40,13 @@ const LearningProgram = (props: Props) => {
           Programme Manual
         </Link>{" "}
         which provides the UJ steps of the Programme Development process from
-        start to finish.
+        start to completion.
         <br />
         <br />
         In addition, read the{" "}
         <b>Academic Programme Policy Senate Approved 10 June 2021.pdf</b> to
-        become au fait with what an academic programme is and what requirements
-        need to be met for the particular qualification or changes to a
-        qualification and programme that you want to make. <br />
+        become acquainted with what an academic programme is and its
+        requirements for approval. <br />
         <br /> Here are some of the requirements as per the Academic Programme
         Policy:
         <ul className="m-8 flex list-inside list-image-[url(/assets/checkmark.svg)] flex-col gap-4">
@@ -201,7 +201,8 @@ const LearningProgram = (props: Props) => {
       </div>
 
       <div className="cursor-pointer text-2xl capitalize text-teaching hover:underline ">
-        UJ Centre that can assist
+        Where can I obtain assistance with designing and developing learning
+        programmes and modules at UJ?
       </div>
       <div className="mb-10 rounded-md bg-base-200/50 p-4">
         The Centre for Academic Planning and Quality Promotion (CAPQP) will

@@ -44,10 +44,10 @@ const SupervisionSkills = (props: Props) => {
         </p>
       </div>
       <div className="cursor-pointer text-2xl capitalize text-teaching hover:underline">
-        Responsabilities of the supervisor and co-supervisor
+        Responsibilities of the supervisor and co-supervisor
       </div>
       <div className="mb-10 rounded-md bg-base-200/50 p-4">
-        To fully understand what your role would be as a supervisor or a
+        To fully understand your role as a research supervisor or a
         co-supervisor, it is advisable that you read the{" "}
         <span className="text-secondary">
           {" "}
@@ -55,13 +55,13 @@ const SupervisionSkills = (props: Props) => {
         </span>
         , which{" "}
         <span className="text-secondary">
-          outlines the responsibilities of the student and legitimate
-          expectations by the supervisor and co-supervisor and of the student.
+          outlines the student&apos;s responsibilities and legitimate
+          expectations by the supervisor, co-supervisor and the student.
         </span>
       </div>
       <div className="cursor-pointer text-2xl text-teaching hover:underline">
-        What CBE requirements need to be met for you to supervise or
-        co-supervise masters and/or PhD students?
+        What CBE requirements must be met by an academic employee to supervise
+        and co-supervise Masters and PhD students?
       </div>
       <div className="mb-10 rounded-md bg-base-200/50 p-4">
         The CBE Higher Degrees Committee Standard Operating Procedures{" "}
@@ -77,10 +77,10 @@ const SupervisionSkills = (props: Props) => {
       <div className="mb-10 rounded-md bg-base-200/50 p-4">
         The supervision process must be followed strictly according to the
         university, college and departmental processes. If students’ research is
-        prolonged due to supervisors not providing timely feedback and following
-        the processes stipulated by the university and the College, financial
-        ramifications for both students, supervisors and departments could
-        occur. <br />
+        prolonged due to supervisors not providing timely feedback and not
+        following the processes stipulated by the university and the college,
+        financial ramifications for both students, supervisors, and departments
+        could occur <br />
         <br /> Prof Thea Tselepis (Department of Business Management) and Prof
         Adri Drostkie (Director of the School of Management) in the CBE have
         developed a Postgraduate Research Toolkit for the School of Management

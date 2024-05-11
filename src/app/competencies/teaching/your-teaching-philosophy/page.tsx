@@ -35,7 +35,7 @@ const YourTeachingPhilosophy = (props: Props) => {
         </p>
       </div>
       <div className="text-teaching text-2xl capitalize hover:underline cursor-pointer">
-        What is teaching philosophy?
+        What is a Teaching Philosophy?
       </div>
       <div className="">
         <div className="rounded-md bg-base-200/50 mb-10 p-4">
@@ -55,7 +55,7 @@ const YourTeachingPhilosophy = (props: Props) => {
             </p>
           </div>
           <p className="mt-4">
-            Other questions can help you formulate your teaching philosophy
+            Additional questions that can assist you in formulating your teaching philosophy
             statement can be found on the Massachusetts Institutes of Technology
             (MIT){" "}
             <Link
@@ -82,7 +82,7 @@ const YourTeachingPhilosophy = (props: Props) => {
         </div>
       </div>
       <div className="text-teaching  text-2xl capitalize ">
-        Ressources - Developing a great teaching Philosophy statement
+        Resources - Developing a great teaching Philosophy statement
       </div>
       <div className="">
         <div className="rounded-md bg-base-200/50 mb-10 p-4">

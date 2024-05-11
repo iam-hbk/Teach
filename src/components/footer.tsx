@@ -20,7 +20,7 @@ const Footer = (props: Props) => {
         </Link>
       </nav>
       <nav>
-        <h6 className="footer-title">Ressources</h6>
+        <h6 className="footer-title">Resources</h6>
         <Link href="#documentation" className="link-hover link">
           Documentation
         </Link>

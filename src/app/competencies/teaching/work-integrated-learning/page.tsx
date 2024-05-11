@@ -16,7 +16,7 @@ const WorkIntegratedLearning = (props: Props) => {
       <div className="">
         <p className="mb-10 rounded-md bg-base-200/50 p-4">
           So, you are tasked with including a{" "}
-          <b>Work-Integrated Learning (WIL)</b>
+          <b>Work-Integrated Learning (WIL) </b>
           component in your module; what do you do? The first thing is to
           understand WIL and its purpose in any curriculum. So…
         </p>
@@ -53,13 +53,19 @@ const WorkIntegratedLearning = (props: Props) => {
         </div>
       </div>
       <div className=" text-2xl capitalize text-teaching ">
-        Ressources - work-integrated learning
+        Resources - work-integrated learning
       </div>
       <div className="">
         <div className="mb-10 rounded-md bg-base-200/50 p-4">
           <h5 className="my-5">
-            Work-integrated learning is considered a modality under
-            Work-Integrated Education (WIE).
+            Work-integrated learning is regarded as a modality under
+            Work-Integrated Education (WIE). Please refer to policy under{" "}
+            <Link
+              className="text-primary underline"
+              href={"#books-journal-article"}
+            >
+              Books/Guides/Journal Articles
+            </Link>
           </h5>
           <div className="flex flex-col">
             UJ’s 2022 Policy on <b>Work-Integrated Education (WIE)</b> indicates
@@ -154,7 +160,7 @@ const WorkIntegratedLearning = (props: Props) => {
           </li>
         </ul>
       </div>
-      <span className="font-bold text-secondary">
+      <span className="font-bold text-secondary" id="books-journal-article">
         Books/Guides/Journal Articles
       </span>
       <div className="mb-10 rounded-md bg-base-200/50 p-4">

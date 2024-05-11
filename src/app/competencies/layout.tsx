@@ -21,8 +21,8 @@ const Nav_elements = [
     link: "/dashboard",
   },
   {
-    title: "ressources",
-    link: "/ressources",
+    title: "resources",
+    link: "/resources",
   },
   {
     title: "discussion forum",

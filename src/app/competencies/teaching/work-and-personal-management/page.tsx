@@ -242,7 +242,7 @@ const WorkAndPersonalManagement = (props: Props) => {
         </ul>
       </div>
       <div className="cursor-pointer text-2xl capitalize text-teaching hover:underline ">
-        Ressources that can help you navigate your academic career
+        Resources that can help you navigate your academic career
       </div>
       <div className="mb-10 rounded-md bg-base-200/50 p-4">
         <ul className="flex list-inside flex-col gap-3">
